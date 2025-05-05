@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hacked by BD8KR3M</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Share Tech Mono', monospace;
+      background: black url('https://i.gifer.com/7VE.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: #00ff00;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .glitch {
+      font-size: 64px;
+      position: relative;
+      animation: glitch 1s infinite;
+      text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    }
+
+    @keyframes glitch {
+      0% {
+        text-shadow: 2px 2px #ff00c1, -2px -2px #00ffff;
+      }
+      25% {
+        text-shadow: -3px 3px #ff00c1, 3px -3px #00ffff;
+      }
+      50% {
+        text-shadow: 3px -3px #ff00c1, -3px 3px #00ffff;
+      }
+      75% {
+        text-shadow: -2px -2px #ff00c1, 2px 2px #00ffff;
+      }
+      100% {
+        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+      }
+    }
+
+    .terminal {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border: 1px solid #00ff00;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00ff00;
+      max-width: 800px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      text-shadow: 0 0 5px #00ff00;
+    }
+
+    .scanlines::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 0, 0.05),
+        rgba(0, 255, 0, 0.05) 2px,
+        transparent 2px,
+        transparent 4px
+      );
+      pointer-events: none;
+      z-index: 999;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body class="scanlines">
+  <div class="terminal">
+    <h1 class="glitch">Test by BD8KR3M</h1>
+    <p>Hi, I am <strong>BD8KR3M</strong>.</p>
+    <p>I attempted a VATP test on your website and...</p>
+    <p><strong>Successfully took control of your subdomain.</strong></p>
+    <p>This is a proof of concept.</p>
+    <p><em>Secure your digital perimeter before it's too late.</em></p>
+  </div>
+</body>
+</html>
